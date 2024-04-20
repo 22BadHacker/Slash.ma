@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(360deg, #1cc7d0, #2ede98);
+}
+.wrapper{
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
+}
+.wrapper .card{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    padding: 5px;
+    transform-style: preserve-3d;
+    transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.wrapper:hover > .front-face{
+    transform: rotateY(-180deg);
+    opacity: 90%;
+    filter: blur(15px);
+
+    
+}
+.wrapper .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.wrapper .back-face{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:7%;
+    transform: rotateY(-90deg);
+    box-shadow: 0 0 10px grey;
+
+}
+.wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+    box-shadow: 0 0 10px grey;
+    background-color: transparent;
+}
+.wrapper .back-face img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; 
+    padding: 5px; 
+    background: linear-gradient(360deg, #1cc7d0, #2ede98);
+
+}
+.wrapper .back-face .info{
+    text-align: center;
+}
+.title{
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.return{
+    text-decoration: none;
+    color: black;
+    margin-left: 50%;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: aqua;
+    box-shadow: 0 0 5px grey;
+    font-family: Arial;
+    font-size: 13px;

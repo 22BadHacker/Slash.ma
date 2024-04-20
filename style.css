@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*the start of editing the background: image,position......*/
+    background-image: url(pexels-moose-photos-1037992.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*the end of editing the background*/
+}
+.body{
+    /*now we gonna make our content flex so everythings will be in the center*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /*styling our container*/
+    width: 250px;
+    border-radius: 40px 40px;
+    text-align: center;
+}
+
+
+.container input{
+    /*styling inputs*/
+    display: block;  /*block==> kat3niii blii input ghadii ya5ed line kamel */
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 20px;
+    border-color: #fff;
+    background-color: rgba(0, 100, 100);
+    outline: none;
+
+}
+.container .img1{
+    /*styling our image*/
+    width: 60px;
+    position: relative;  /* derna lih Relative bach i5elii l espace dyal l img */
+    top: -20px; /*- bach nrdoo l img f top */
+}
+
+p{
+    /*styling text*/
+    color: #fff;/*or #000*/
+    text-shadow: 4px 2px 5px;
+    font-family: cursive;
+    opacity: 100%;/*li kat3enii l capacity => chafafiya*/
+}
+
+p a{
+    /*styling link*/
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fe3dac;
+}
+
+::placeholder{  /*hadii hiya l method bach ndiro style l placeholder dyal l input*/
+    font-weight: bold;
+    font-family: serif;
+    color: black;
+}
+
+
+input[type="submit"]{  /*3awetanii method bach ndiroo style l input */
+    width: 50%;
+    cursor: pointer;
+    background: #0078ff; 
+    background: linear-gradient(to right, #240b36, #c31432);/* linear-gradient bach t9der dir lmix dyal 2 colors */
+    /* in google chrome use webkit-linear-gradient*/
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+.container:hover{ /* now do some Effect on our container*/ 
+    box-shadow: 0 0 15px grey;
+    transition: 0.5s; /* control of the animation speed*/
+    transform: scale(1.10); /*scale ==> kadir transform l size*/
+    background: transparent; /* transparent ==> chafafiya*/
+}
+
+
+input[type="checkbox"]{
+    /*style l checkbox*/
+    display: inline;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+}
+
+.container h4{
+    font-size: 14px; 
+    font-weight: bold;
+    color: #fff;
+}
+
+h4 a{
+    /*link style*/
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    /*'Creat account' style*/
+    cursor: pointer; /* kadir wahed l hand */
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 0 10px gray;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link{
+    padding-bottom: 5px;
+    display: block;
+    text-decoration: none;
+    color: #71a1bd;
+    font-weight: bold;
+    
+}
+.return{
+    text-decoration: none;
+    color: black;
+    margin-left: 50%;
+    padding: 3px;
+    border-radius: 7px;
+    background: #0078ff;
+    background: linear-gradient(to left, #bd38b8, #f1916d);
+    box-shadow: 0 0 5px grey;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 550;
+    opacity: 80%;
+}
+.return1{
+    text-decoration: none;
+    color: black;
+    margin-left: 50%;
+    padding: 3px;
+    border-radius: 7px;
+    background: #0078ff;
+    background: linear-gradient(to left, #c38eb4, rgba(172, 238, 136, 0.8));
+    opacity: 80%;
+    box-shadow: 0 0 5px grey;
+    font-family: Arial;
+    font-weight: 550;
+    font-size: 13px;
+}
+
+
+.nav-logo{
+    flex: 1;
+    padding: 8px;
+    cursor: pointer;
+}
+.logo{
+    color: #fff;
+    text-shadow: 0 0 10px greenyellow;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
