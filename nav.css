@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(img/img1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -11,25 +12,29 @@ body{
     background-attachment: fixed;
 }
 
-.navigation{
+.navigation {
     display: flex;
     align-items: center;
     margin: 6px;
 }
-.nav-logo{
+
+.nav-logo {
     flex: 1;
     padding: 8px;
     cursor: pointer;
 }
-ul{
+
+ul {
     display: flex;
 
 }
+
 ul li {
     display: inline;
     padding: 10px 15px;
 }
-ul li .link{
+
+ul li .link {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -37,32 +42,36 @@ ul li .link{
     position: relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.active{
+
+.active {
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-p{
+
+p {
     color: #fff;
     text-shadow: 0 0 10px greenyellow;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul li:hover{
+
+ul li:hover {
     transition: .1s;
     transform: translateX(-10%);
 }
 
-.login{
+.login {
     border-radius: 18px 3px;
     padding: 4px;
     background-color: #0078ff;
 }
-.login:hover{
+
+.login:hover {
     box-shadow: 0 0 10px grey;
 }
 
-footer{
+footer {
     width: 250px;
     position: absolute;
     top: 68%;
@@ -72,12 +81,13 @@ footer{
     color: #fff;
 }
 
-cite{
+cite {
     float: right;
     color: #fff;
     font-weight: bold;
 }
-.copy{
+
+.copy {
     position: absolute;
     width: 250px;
     top: 90%;
@@ -85,7 +95,7 @@ cite{
     transform: translate(-50%, -50%);
 }
 
-.cc{
+.cc {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     color: #0078ff;
@@ -94,11 +104,13 @@ cite{
 
     cursor: pointer;
 }
-.cc:hover{
+
+.cc:hover {
     transform: scale(1.10);
     color: #fff;
 }
-h5{
+
+h5 {
     font-size: 20px;
     color: #fe3dac;
     padding-bottom: 7px;
@@ -106,7 +118,11 @@ h5{
     cursor: pointer;
     text-align: center;
 }
-h5:hover{
+
+h5:hover {
     transform: scale(1.10);
-} 
-@media{width: 250px;}     
+}
+
+@media {
+    width: 250px;
+}
